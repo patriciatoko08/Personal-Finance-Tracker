@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/pages/home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="./HOME_files/home.css">
+    </head><body><section id="HomeBudget">
+       <div class="left">
+        <img src="./HOME_files/b56387d5864cd9295681272ca840672d.jpg">
+        </div>
+        <div class="right">
+        <div id="box"> <div class="logo">
+            <img src="./HOME_files/high-resolution-color-logo.png" alt=""></div>
+
+        </div>
+        <div class="center">
+        </div>
+        <div class="dashboard">
+            <!-- Top Header Section -->
+            <header class="top-banner">
+                <div class="title-box">HOME BUDGET</div>
+                <div class="overview-box">
+                    <table class="overview-table">
+                        <thead>
+                            <tr>
+                                <th>OVERVIEW</th>
+                                <th>EST</th>
+                                <th>ACT</th>
+                                <th>DIFF</th>
+                            </tr>
+                        </thead>
+                         <tbody>
+                            <tr><td>Total Income</td><td>5.160.000</td><td>5.160.000</td><td>-</td></tr>
+                    <tr><td>Total Expenses</td><td>1.905.000</td><td>1.932.000</td><td>(27.000)</td></tr>
+                    <tr class="savings-row"><td>Total Savings</td><td>3.255.000</td><td>3.228.000</td><td>(27.000)</td></tr>
+                </tbody>
+                </table>
+                </div>
+                </header>
+<!-- 2. ADD THIS PART HERE (The Time Picker) -->
+    <div class="period-picker-container">
+        <label for="budget-period">Select Month:</label>
+        <input type="month" id="budget-period" name="budget-period" value="2026-04">
+        <button class="btn-update">Update View</button>
+    </div>
+
+                <!-- Income Section -->
+                 <section class="budget-section">
+                    <div class="table-container">
+                        <h2>INCOME</h2>
+                        <table class="main-table">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                        <th>Description</th>
+                        <th>EST</th>
+                        <th>ACT</th>
+                        <th>DIFF</th>
+                    </tr>
+
+                            </thead>
+                            <tbody>
+                            <tr><td>001</td><td>Employment Income</td><td>570.000</td><td>510.000</td><td>60.000</td></tr>
+                    <tr><td>002</td><td>Freelance Income</td><td>510.000</td><td>570.000</td><td>(60.000)</td></tr>
+                    <tr><td>003</td><td>Investment Income</td><td>510.000</td><td>510.000</td><td>-</td></tr>
+                    <tr><td>004</td><td>Rental Income</td><td>510.000</td><td>510.000</td><td>-</td></tr>
+                    <tr><td>005</td><td>Side Hustles</td><td>510.000</td><td>510.000</td><td>-</td></tr>
+                    <tr><td>006</td><td>Dividend Income</td><td>510.000</td><td>510.000</td><td>-</td></tr>
+                    <tr class="total-footer">
+                        <td colspan="2">TOTAL INCOME:</td>
+                        <td>5.160.000</td><td>5.160.000</td><td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button>Add Income</button>
+            </div> 
+            <div class="chart-container">
+                <canvas id="incomeChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Expenses Section -->
+         <section class="budget-section">
+            <div class="table-container">
+                <h2>EXPENSES</h2>
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                        <th>Description</th>
+                        <th>EST</th>
+                        <th>ACT</th>
+                        <th>DIFF</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+ <tr></tr><tr><td>001</td><td>Rent/Mortgage</td><td>120.000</td><td>90.000</td><td>30.000</td></tr>
+                    <tr><td>002</td><td>Entertainment</td><td>360.000</td><td>288.000</td><td>72.000</td></tr>
+                    <tr><td>003</td><td>Transportation</td><td>60.000</td><td>90.000</td><td>(30.000)</td></tr>
+                    <tr><td>004</td><td>Loan Payments</td><td>60.000</td><td>105.000</td><td>(45.000)</td></tr>
+                    <tr><td>005</td><td>Insurance</td><td>270.000</td><td>264.000</td><td>6.000</td></tr>
+                    <tr><td>006</td><td>Groceries</td><td>60.000</td><td>90.000</td><td>(30.000)</td></tr>
+                    <tr class="total-footer">
+                        <td colspan="2">TOTAL INCOME:</td>
+                        <td>5.160.000</td><td>5.160.000</td><td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button>Add Expenses</button>
+            </div>
+            <div class="chart-container">
+                <canvas id="expenseChart"></canvas>
+            </div>
+        </section>
+        </div>
+                         
+                    
+
+                </div>
+                <div class="chart-container">
+                    <canvas id="incomeChart"></canvas>
+                 </div>
+ </section></body></html>

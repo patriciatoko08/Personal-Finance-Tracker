@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemanga Toko Audrey Patricia — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link href="./Lemanga Toko Audrey Patricia — Portfolio_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./Lemanga Toko Audrey Patricia — Portfolio_files/style.css">
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav">
+    <span class="nav-logo">LTAP.</span>
+    <ul class="nav-links">
+      <li><a href="http://127.0.0.1:5500/index.html#about">About</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#projects">Projects</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">Available for work</div>
+        <h1 class="hero-title">
+          Hello, I'm<br>
+          <em>Audrey Patricia</em>
+        </h1>
+        <p class="hero-sub">
+          I build clean, fast, and beautiful web experiences.<br>
+          Full-stack developer based in Yaoundé, Cameroon.
+        </p>
+        <div class="hero-cta">
+          <a href="http://127.0.0.1:5500/index.html#projects" class="btn btn-primary">See my work</a>
+          <a href="http://127.0.0.1:5500/index.html#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./Lemanga Toko Audrey Patricia — Portfolio_files/profile.jpg" alt="Audrey Patricia">
+      </div>
+    </div>
+    <div class="hero-scroll">scroll ↓</div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>A developer who cares<br>about the details.</h2>
+          <p>I'm a Software Engineering student in my second year at IAI Cameroon, passionate about building things for the web. I'm currently learning and growing my skills every day, with a clear goal in mind — becoming a skilled full-stack developer.</p>
+          <p>I enjoy turning ideas into real, working projects. GymLife Master and Personal Finance Tracker are just the beginning of what I'm building on that journey.</p>
+        </div>
+        <div class="about-skills">
+          <div class="skill-group">
+            <h4>Frontend</h4>
+            <ul>
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Backend</h4>
+            <ul>
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Tools</h4>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>VS Code</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label">02 — Projects</div>
+      <h2>Selected work</h2>
+      <div class="projects-grid">
+
+        <article class="card">
+          <div class="card-num">01</div>
+          <h3>GymLife Master</h3>
+          <p>A web platform that helps gym clubs manage their activities online. Clients can sign up, browse available activities, and book sessions by choosing what to do, when, and at what time.</p>
+          <div class="card-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>In Progress</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/patriciatoko08/gymlife-master" target="_blank">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-num">02</div>
+          <h3>Personal Finance Tracker</h3>
+          <p>A web app to help users take control of their money. Track expenses, view income, and visualise spending habits through clear and interactive charts.</p>
+          <div class="card-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>In Progress</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/patriciatoko08/personal-finance-tracker" target="_blank">GitHub ↗</a>
+          </div>
+        </article>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="section-label">03 — Contact</div>
+      <h2>Let's work together.</h2>
+      <p>I'm currently open to new opportunities. Whether you have a project in mind or just want to say hello — my inbox is always open.</p>
+      <a href="http://127.0.0.1:5500/cdn-cgi/l/email-protection#fd8d9c898f949e949c89929692cdc5bd9a909c9491d39e9290" class="btn btn-primary">Say hello ↗</a>
+      <div class="social-links">
+        <a href="https://github.com/patriciatoko08" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/audrey-patricia-lemanga-toko" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <span>© 2026 Lemanga Toko Audrey Patricia. Built with ♥</span></footer></body></html>

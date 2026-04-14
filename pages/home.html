@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME BUDGET</title>
+   <link rel="stylesheet" href="/style/home.css">
+</head>
+<body>
+
+<section id="HomeBudget">
+
+    <!-- RIGHT PANEL -->
+
+        <!-- Logo -->
+        <div id="box">
+            <div class="logo">
+                <img src="/assets/b56387d5864cd9295681272ca840672d.jpg" alt="Logo">
+            </div>
+            <div class="logo">
+                <img src="/assets/high-resolution-color-logo.png" alt="Logo">
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <header class="top-banner">
+            <div class="title-box">HOME BUDGET</div>
+            <div class="overview-box">
+                <table class="overview-table">
+                    <thead>
+                        <tr>
+                            <th>OVERVIEW</th>
+                            <th>EST</th>
+                            <th>ACT</th>
+                            <th>DIFF</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Total Income</td><td>500.000<td>500.000</td><td>500.000</td></tr>
+                        <tr><td>Total Expenses</td><td>300.000</td><td>300.000</td><td>300.000</td></tr>
+                        <tr class="savings-row"><td>Total Savings</td><td>150.000</td><td>150.000</td><td>150.000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </header>
+
+        <!-- MONTH PICKER -->
+        <div class="period-picker-container">
+            <label for="budget-period">Select Month:</label>
+            <input type="month" id="budget-period" name="budget-period" value="2026-04">
+            <button class="btn-update">Update View</button>
+        </div>
+
+        <!-- INCOME SECTION -->
+        <section class="budget-section">
+            <div class="table-container">
+                <h2>INCOME</h2>
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Description</th>
+                            <th>EST</th>
+                            <th>ACT</th>
+                            <th>DIFF</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>001</td><td>Employment Income</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr><td>002</td><td>Freelance Income</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr><td>003</td><td>Investment Income</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr class="total-footer">
+                            <td colspan="2">TOTAL INCOME:</td><td>5.160.000</td><td>5.160.000</td><td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>Add Income</button>
+            </div>
+        </section>
+
+        <!-- EXPENSES SECTION -->
+        <section class="budget-section">
+            <div class="table-container">
+                <h2>EXPENSES</h2>
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Description</th>
+                            <th>EST</th>
+                            <th>ACT</th>
+                            <th>DIFF</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>001</td><td>Rent/Mortgage</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr><td>002</td><td>Entertainment</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr><td>003</td><td>Transportation</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr><td>004</td><td>Loan Payments</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr><td>005</td><td>Insurance</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr><td>006</td><td>Groceries</td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td><td><input type="number" placeholder="500"></td></tr>
+                        <tr class="total-footer">
+                            <td colspan="2">TOTAL EXPENSES:</td><td>500.000</td><td>500.000</td><td>500.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>Add Expenses</button>
+            </div>
+        </section>
+
+
+</section>
+
+</body>
+</html>

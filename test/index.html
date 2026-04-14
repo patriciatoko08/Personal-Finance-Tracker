@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinSet – Layout Wireframe</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* labels shared */
+  .box {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .box-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .box-sub {
+    font-size: 11px;
+    opacity: 0.7;
+    line-height: 1.5;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width: 110px;
+    flex-shrink: 0;
+    background: #ddd8ff;
+    border: 2px dashed #7b61ff;
+    border-radius: 10px;
+    margin: 10px 8px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 8px;
+    color: #3a2fa0;
+  }
+  .sidebar .box-title { font-size: 14px; }
+  .sidebar .box-sub   { font-size: 11px; }
+
+  /* ── MAIN ── */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 10px 10px 0;
+    overflow: hidden;
+  }
+
+  /* TOPBAR */
+  .topbar {
+    background: #b2f0e8;
+    border: 2px dashed #0d9488;
+    color: #0d5e58;
+    border-radius: 8px;
+    padding: 14px;
+    flex-shrink: 0;
+  }
+
+  /* FILTER ROW */
+  .filter-row {
+    background: #e5e5e5;
+    border: 2px dashed #888;
+    color: #444;
+    border-radius: 8px;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+
+  /* STAT CARDS */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .stat-card {
+    background: #dbeafe;
+    border: 2px dashed #3b82f6;
+    color: #1d4ed8;
+    border-radius: 8px;
+    padding: 14px 10px;
+  }
+
+  /* MID ROW */
+  .mid-row {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 8px;
+    flex: 1;
+    min-height: 0;
+  }
+  .chart-card {
+    background: #fef9c3;
+    border: 2px dashed #ca8a04;
+    color: #713f12;
+    border-radius: 8px;
+    padding: 14px;
+  }
+  .budget-card {
+    background: #ffe4e6;
+    border: 2px dashed #e11d48;
+    color: #881337;
+    border-radius: 8px;
+    padding: 14px;
+  }
+
+  /* BOTTOM ROW */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 8px;
+    flex: 1;
+    min-height: 0;
+  }
+  .transactions-card {
+    background: #ccfbf1;
+    border: 2px dashed #0f766e;
+    color: #134e4a;
+    border-radius: 8px;
+    padding: 14px;
+  }
+  .goals-card {
+    background: #dcfce7;
+    border: 2px dashed #16a34a;
+    color: #14532d;
+    border-radius: 8px;
+    padding: 14px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar box">
+    <div class="box-title">Sidebar</div>
+    <div class="box-sub">
+      Logo<br>
+      Nav items<br>
+      Help / Logout<br>
+      Avatar
+    </div>
+  </div>
+
+  <!-- MAIN AREA -->
+  <div class="main">
+
+    <!-- TOPBAR -->
+    <div class="topbar box">
+      <div class="box-title">Topbar</div>
+      <div class="box-sub">Welcome title · Search · Notifications · User chip</div>
+    </div>
+
+    <!-- FILTER ROW -->
+    <div class="filter-row box">
+      <div class="box-title">Filter row</div>
+      <div class="box-sub">Date picker · Manage widgets · Add widget</div>
+    </div>
+
+    <!-- STAT CARDS -->
+    <div class="stat-grid">
+      <div class="stat-card box">
+        <div class="box-title">Stat card</div>
+        <div class="box-sub">Total balance<br>Value + change</div>
+      </div>
+      <div class="stat-card box">
+        <div class="box-title">Stat card</div>
+        <div class="box-sub">Income<br>Value + change</div>
+      </div>
+      <div class="stat-card box">
+        <div class="box-title">Stat card</div>
+        <div class="box-sub">Expense<br>Value + change</div>
+      </div>
+      <div class="stat-card box">
+        <div class="box-title">Stat card</div>
+        <div class="box-sub">Total savings<br>Value + change</div>
+      </div>
+    </div>
+
+    <!-- MID ROW -->
+    <div class="mid-row">
+      <div class="chart-card box">
+        <div class="box-title">Chart card — Money flow</div>
+        <div class="box-sub">Legend · Filter chips<br>Bar chart canvas<br>Income vs Expense by month</div>
+      </div>
+      <div class="budget-card box">
+        <div class="box-title">Budget card</div>
+        <div class="box-sub">Donut chart<br>Centre value<br>Category legend</div>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="bottom-row">
+      <div class="transactions-card box">
+        <div class="box-title">Recent transactions</div>
+        <div class="box-sub">Filter chip · See all button<br>Table header row<br>Date · Amount · Name · Method · Category<br>Transaction row × 3</div>
+      </div>
+      <div class="goals-card box">
+        <div class="box-title">Saving goals</div>
+        <div class="box-sub">Goal name · Target amount<br>Progress bar · Percentage<br>× 3 goals</div>
+      </div>
+    </div>
+
+  </div><!-- /main -->
+
+</body>
+</html>
